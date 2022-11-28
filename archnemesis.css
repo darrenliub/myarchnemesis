@@ -1,0 +1,54 @@
+body {
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-image: url(https://blog.tech-fellow.net/content/images/2019/10/Tom-Clancy-s-Ghost-Recon--Breakpoint2019-10-19-18-9-11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@keyframes gun {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(200px) rotate(50deg);
+    }
+}
+
+@keyframes walker {
+    0%{
+        transform: translateX(0px) rotate(0deg);
+    }
+    50%{
+        transform: translateX(0px) rotate(0deg);
+    }
+    100%{
+        transform: translateX(-200px) rotate(-50deg);
+    }
+}
+
+#gun {
+    animation: gun;
+    display: flex;
+    width: 400px;
+    height: 300px;
+    flex-direction: row;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#walker {
+    animation: walker;
+    display: flex;
+    width: 300px;
+    height: 450px;
+    flex-direction: row;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
